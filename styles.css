@@ -6,9 +6,13 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+
 .navbar {
     display: flex;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
@@ -84,21 +88,197 @@ body, html {
 
 .hero{
     display: flex;
-    margin: 100px 80px;
+    margin: 200px 0px 80px 100px;
 }
 .img img{
-    width:30%;
+    width:25%;
     border-radius: 20px;
     height: auto;
+    box-shadow: 0px 9px 31px 0px #00000066;
+}
+
+.social{
+    display: flex;
+    justify-content: end;
+    top: 150px;
+    margin: 150px 0px 150px 0;
+}
+
+div.social img{
+    width: 75px;
+    position: fixed;
+    margin-top: 200px;
+    top:0;
 }
 .note{
-    width:70%;
+    width:75%;
     border-radius: 20px;
     background-color: #E5D8FF;
     height: auto;
     margin-left: 35px;
     color: #6F7373;
-    padding: 10px 30px;
+    padding: 10px 25px;
     font-size: 20px;
+    margin-right: 85px;
+}
 
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin:0px 50px 100px 60px;
+}
+
+.stat-box1{
+    width:25%;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#929DFF;
+    border-radius: 10px;
+    height: 150px;
+    margin:20px;
+    box-shadow: 0px 9px 31px 0px #00000066;
+
+}
+.stat-box2{
+    width:25%;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #734CF2;
+    border-radius: 10px;
+    height: 150px;
+    margin:20px;
+    box-shadow: 0px 9px 31px 0px #00000066;
+
+}
+.stat-box3{
+    width:25%;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D288FF;
+    border-radius: 10px;
+    height: 150px;
+    margin:20px;
+    box-shadow: 0px 9px 31px 0px #00000066;
+
+}
+.stat-box4{
+    width:25%;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 10px;
+    height: 150px;
+    margin:20px;
+    box-shadow: 0px 9px 31px 0px #00000066;
+
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7B61FF;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin:0px 50px 60px 60px;
+}
+
+.user-info .sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 40px;
+    gap: 20px;
+}
+
+.btn1 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    margin: 10px 0;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #BCE0F6;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0px 9px 31px 0px #00000066;
+
+}
+
+.btn2{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    margin: 10px 0;
+    padding: 20px;
+    border: 4px solid white;
+    border-radius: 20px;
+    background-color: #7B61FF;
+    color: #FFF;
+    cursor: pointer;
+
+}
+.btn3{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    margin: 10px 0;
+    padding: 20px;
+    border: 4px solid white;
+    border-radius: 20px;
+    background-color: #7B61FF;
+    color: #FFF;
+    cursor: pointer;
+}
+.user-info .info-content {
+    font-family: 'DM Sans', sans-serif;
+    width: 70%;
+    margin: 10px;
+    background-color: #ffff;
+    border-radius: 10px;
+    color: #000;
+    padding-left: 40px;
+    font-size: 24px;
+}
+
+.next-btn {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 75%;
+    font-size: 28px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.help{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 150px;
+    margin-bottom: 100px;
 }
